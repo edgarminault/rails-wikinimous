@@ -6,6 +6,7 @@
       <div class="button-container d-flex justify-content-between">
         <%= link_to "Edit", edit_article_path(@article), :class => 'navbar-brand btn btn-primary' %>
         <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, :class => 'navbar-brand btn btn-danger' %>
+        <%= link_to "Return", articles_path, :class => 'navbar-brand btn btn-success' %>
       </div>
     </div>
   </div>
