@@ -36,7 +36,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     # no need for app/views/restaurants/destroy.html.erb
-    redirect_to article_path
+    redirect_to articles_path
   end
 
   private
