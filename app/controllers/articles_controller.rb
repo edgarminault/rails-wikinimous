@@ -31,6 +31,14 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    # no need for app/views/restaurants/destroy.html.erb
+    redirect_to article_path
+  end
+
   private
 
   def article_params
